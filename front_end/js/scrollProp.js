@@ -19,7 +19,7 @@ function scrollProp(event){
             clearInterval(interval);
             return;
         } 
-         window.scrollBy(0,12);
+         window.scrollBy(0,16);
         },5);
     }
     else{
@@ -29,7 +29,7 @@ function scrollProp(event){
             clearInterval(interval);
             return;
         } 
-        window.scrollBy(0,-12);
+        window.scrollBy(0,-16);
         },5)
     } 
 

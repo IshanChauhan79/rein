@@ -2,11 +2,12 @@ html,
 body {
     margin: 0;
     position: relative;
+    width:100%;
 
     font-family: sans-serif;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -47,17 +48,18 @@ div{
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 5;
+
 }
 #logo-box{
-    width: 120px;
-    height: 120px;
+    min-width: 120px; 
+    height:120px;
     position: relative;
     z-index: 3;
 }
 #a-tag-home{
     position: absolute;
-    width: 120px;
-    height: 120px;
+    min-width: 120px;
+    height:120px;
     z-index: 4;
 }
 #a-tag-home div{
@@ -68,18 +70,18 @@ div{
     display: none;
 }
 #logo1{
-    width:100%;
-    height:100%;
+    min-width:120px;
+    height:120px;	
     background-image: url('../images/logo.png');
 }
 #logo2{
-    width:100%;
-    height:100%;
+    min-width:120px;
+    height:120px;
     background-image: url('../images/logo2.png');
 }
 
 #header-box {
-    width: 100%;
+    width:90%;
     height: 70px;
     background-color: #234976;
     color: white;
@@ -87,6 +89,7 @@ div{
 }
 
 #header-box.div {
+
     height: 35px;
     width: 100%;
 }
@@ -106,7 +109,7 @@ div{
 .menu-width {
     min-width: 100px;
     
-    width: 25%;
+    /* width: 25%; */
 }
 
 .paddingleft-5px {
@@ -129,6 +132,24 @@ div{
     width: 100%;
 }
 
+#dropdown-menu{
+    font-size:16px;
+    padding:5px;
+    padding-bottom:3px;
+    border:1px solid white;
+    border-radius:2px;
+    margin-left:10px;
+    display:none;
+    margin-top:5px;
+}
+#dropdown-menu a{
+    color:white;
+    text-decoration:none;
+    
+}
+#dropdown-menu a:hover{
+    color:lightgrey;
+}
 
 #menu {
     margin-top: 8px;
@@ -141,6 +162,7 @@ div{
     align-items: center;
     background-color: white;
     overflow: hidden;
+    
 
 }
 
@@ -160,7 +182,7 @@ div{
 
 #follow {
     width: 30%;
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 5px;
     padding-top:5px;
     text-align: center;
@@ -168,7 +190,7 @@ div{
 }
 
 #follow-text {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #follow a {
@@ -376,7 +398,7 @@ div{
 #story {
     position: relative;
     text-align: center;
-    padding-top:80px;
+    padding-top:60px;
 }
 
 .heading {
@@ -411,9 +433,9 @@ div{
     text-align: center;
     font-size: 60px;
     font-weight: 300;
-    margin: 50px 0 20px;
+    margin: 50px 0 30px;
     color: #234976;
-    padding-top: 150px;
+    padding-top: 170px;
     font-weight: 600;
 }
 #bottles{
@@ -603,7 +625,7 @@ div{
     background-image: url('../images/box.png');
     color: white;
     font-family: 'Work Sans', sans-serif;
-    padding:20px 0 100px 0;
+    padding:50px 0 100px 0;
     text-align:center;
     /* height:80vh;
     padding-top:20vh; */
@@ -665,5 +687,136 @@ div{
 }
 #free-water a:hover{
     color:lightgrey;
+}
+
+
+
+
+
+
+
+
+/* media queries ----------------------------------------------- */
+
+
+
+@media screen and (max-width: 1024px){
+    #number{
+        font-size:20px;
+    }
+    #menu{
+        width:66%;
+        font-size:13px;
+    }
+    #follow{
+        font-size:18px;
+        width:34%;
+        padding-top: 8px;
+    }
+    #follow a{
+        padding:0;
+        padding-left:5px
+    }
+    #follow-text{
+        font-size:20px;
+    }
+    #wamen{
+        left:10%;
+    }
+    #make-in-india{
+        right:8%;
+    }
+
+
+
+
+
+    .pname{
+        font-size:28px;
+    }
+    .p-details{
+        width:95%;
+        overflow:hidden;
+        margin-top:8px;
+        max-height:150px;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    #wamen{
+        left:5%;
+    }
+    #make-in-india{
+        right:4%;
+    }
+    #follow-text{
+        display:none;
+    }
+    #follow{
+        width:20%;
+    }
+    #menu{
+        width:80%;
+        justify-content: space-between;
+        
+    }
+
+}
+
+
+@media screen and (max-width: 760px){
+
+    #logo-box{
+        overflow:hidden;
+    }
+    #logo-box{
+        height:80px;
+        min-width:80px;
+
+    }
+    #a-tag-home{
+        height:80px;
+        min-width:80px;
+
+    }
+    #logo1{
+        height:80px;
+        min-width:80px;
+
+    }
+    #logo2{
+        height:80px;
+        min-width:80px;
+
+    }
+
+    #header-box{
+        height:40px;
+       
+        
+    }
+    #menu{
+        display:none;
+
+    }
+    
+    #header-bar{
+        justify-content: space-between;
+    }
+    #number{
+        display:none;
+
+    }
+    #follow{
+        width:auto;
+        margin-right:10px;
+        
+    }
+    #dropdown-menu{
+        display:block;
+    }
+
+
 }
 
