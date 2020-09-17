@@ -372,8 +372,9 @@ div{
 }
 
 .icons-container {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width:100px;
+    min-width: 70px;
     text-align: center;
     font-size: 14px;
     padding: 0 3px;
@@ -387,8 +388,8 @@ div{
 }
 
 .icons {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    min-width: 70px;
     margin: auto;
 }
 
@@ -810,13 +811,92 @@ div{
     }
     #follow{
         width:auto;
-        margin-right:10px;
+        margin-right:50px;
         
     }
     #dropdown-menu{
         display:block;
     }
+    #slogan {
+        bottom:-45px;
+    
+    }
+    #features{
+        margin-top:80px;
+    }
 
+    .para {
+        width: 80%;
+    }
+    
 
 }
 
+
+@media screen and (max-width: 550px){
+    #wamen{
+
+        height:140px;
+        min-width:80px;
+
+    }
+    
+    #make-in-india{
+        bottom:-42px;
+        height:200px;
+        min-width:110px;
+
+    }
+
+
+    #slogan {
+        font-size: 18px;
+        letter-spacing: 1.0px;
+    }
+    .rein{
+        font-size: 23px;
+    }
+    .para {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .icons-container {
+
+        font-size: 12px;
+
+
+    }
+    .icons {
+        height: 60px;
+        min-width: 45px;
+        margin: auto;
+    }
+
+    #slide-box{
+
+        height:250px;
+  
+    }
+
+
+
+    #slogan {
+        bottom:-55px;
+    
+    }
+    #features{
+        margin-top:90px;
+    }
+    .para {
+        width: 100%;
+        font-size: 13px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+
+
+}
