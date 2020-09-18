@@ -471,7 +471,9 @@ div{
     display: flex;
     min-height: 300px;
     width: 100%;
+    min-width: 600px;
     margin-bottom: 80px;
+    
     /* align-items: center;
     flex-direction: column; */
 }
@@ -523,7 +525,7 @@ div{
     padding-left: 50px;
     position: relative;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
     
 }
 
@@ -559,8 +561,8 @@ div{
 .p-details {
     font-size: 1rem;
     width: 85%;
-    margin-top: 32px;
-    /* color:lightgrey; */
+    margin-top: 25px;
+
     font-weight: 600;
 
 }
@@ -748,7 +750,7 @@ div{
         width:95%;
         overflow:hidden;
         margin-top:8px;
-        max-height:150px;
+        /* max-height:150px; */
     }
 
 }
@@ -770,6 +772,23 @@ div{
         width:80%;
         justify-content: space-between;
         
+    }
+    
+    #products {
+        width: 90%;
+    }
+    .p-name {
+        font-size: 28px;
+        letter-spacing: 1.7px;
+
+    }
+    
+
+    
+    .p-details {
+        font-size: 0.9rem;
+        margin-top: 15px;
+    
     }
 
 }
@@ -834,10 +853,39 @@ div{
     #features{
         margin-top:80px;
     }
+    .products-info{
+        min-width: 250px;
+        margin-top:30px;
+    }
 
     .para {
         width: 80%;
     }
+    .flex-ro:nth-child(2n+1){
+        flex-wrap:wrap;
+    }
+    .flex-ro:nth-child(2n){
+        flex-wrap:wrap-reverse;
+    }
+    .flex-bottles:nth-child(2n+1){
+        flex-wrap:wrap-reverse;
+    }
+    .flex-bottles:nth-child(2n){
+        flex-wrap:wrap;
+    }
+    .ro{
+        margin:auto;
+        min-width: 250px;
+        max-width: 250px;
+        height: 250px;
+
+    }
+    .info{
+        height:240px;
+        min-height:240px;
+    }
+
+
     
 
 }
@@ -908,6 +956,15 @@ div{
         font-size:15px;
         
     }
+    .info{
+        padding-left:20px;
+        height:300px;
+        min-height:300px;
+    }
+    #water-purifiers {
+        font-size: 45px;
+
+    }
     
 
 
@@ -947,4 +1004,22 @@ div{
     }
 
 
+}
+
+
+
+
+@media screen and (max-width: 350px){
+    .p-button {
+        cursor: pointer;
+        height: 27px;
+        background-color: #234976;
+        color: white;
+        border: 0;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        margin-right: 10px;
+        padding: 2px 10px;
+    }
 }
