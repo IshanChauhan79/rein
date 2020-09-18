@@ -419,24 +419,33 @@ div{
     color: #6a6e76;
 }
 
+/*  wave --------------------------------------------------------------------------------------*/
+#wave{
+    background-image: url('../images/shop3.png');
+    height:150px;
+    width:100%;
 
+}
 
-/* shop and RO-------------------------------------*/
+/* shop and RO---------------------------------------------------------------------------------*/
 
 #shop {
     position: relative;
-    background-image: url('../images/backgroundBlue.png');
+    background-image: url('../images/shop2.png');
     color: white;
     font-family: 'Work Sans', sans-serif;
+    width:100%;
+    /* overflow: hidden; */
 }
 
 #water-purifiers {
     text-align: center;
     font-size: 60px;
     font-weight: 300;
-    margin: 50px 0 30px;
+    margin: 0;
+    margin-bottom:30px;
     color: #234976;
-    padding-top: 170px;
+
     font-weight: 600;
 }
 #bottles{
@@ -768,6 +777,7 @@ div{
 
 @media screen and (max-width: 760px){
 
+
     #logo-box{
         overflow:hidden;
     }
@@ -834,6 +844,7 @@ div{
 
 
 @media screen and (max-width: 550px){
+
     #wamen{
 
         height:140px;
@@ -850,6 +861,8 @@ div{
 
 
     #slogan {
+        width:100%;
+        margin:0;
         font-size: 18px;
         letter-spacing: 1.0px;
     }
@@ -859,6 +872,44 @@ div{
     .para {
         width: 90%;
     }
+
+    .titleblue{
+        font-size: 46px;
+    }
+    .width80{
+        width:80%;
+    }
+    .para-css{
+        font-size:20px;
+        text-align:center;
+    }
+    #buy-sub-title
+    {
+        font-size: 35px;
+
+    }
+    
+
+    #footer h2{
+
+        font-size:10px;
+    }
+    #footer ul{
+        font-size:7px;
+    }
+    #footer li{
+        margin-top:8px;
+    }
+
+    #free-water{
+        right:-76px;
+        top:200px;
+        padding:5px 17px;
+        font-size:15px;
+        
+    }
+    
+
 
 }
 
@@ -883,10 +934,7 @@ div{
 
 
 
-    #slogan {
-        bottom:-55px;
-    
-    }
+
     #features{
         margin-top:90px;
     }
