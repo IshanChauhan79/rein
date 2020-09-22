@@ -36,15 +36,27 @@ function scrollProp(event){
     
 } 
 
+// for header navbar
+var navMenuATag=document.querySelectorAll('#menu a');
 
-    var navMenuATag=document.querySelectorAll('#menu a');
+for(var i=0;i<navMenuATag.length;i++)
+{
+    navMenuATag[i].addEventListener('click',scrollProp );
+}
 
-    for(var i=0;i<navMenuATag.length;i++)
-    {
-        navMenuATag[i].addEventListener('click',scrollProp );
-    }
+//navbar for phone
+var navPhone=document.querySelectorAll('#navbar-phone a');
 
-    var homeATag=document.querySelector('#a-tag-home a');
+for(var i=0;i<navPhone.length;i++)
+{
+    navPhone[i].addEventListener('click',scrollProp );
+}
 
-    homeATag.addEventListener('click',scrollProp);
+
+
+
+//navbar for home
+var homeATag=document.querySelector('#a-tag-home a');
+
+homeATag.addEventListener('click',scrollProp);
 

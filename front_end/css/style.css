@@ -205,8 +205,59 @@ div{
 }
 
 
-/* main body---------------------------------------*/
-/* head-----------------------------*/
+/* main body-----------------------------------------------------------------------------------------------------*/
+
+
+
+/* nav bar for phone ------------------------------------------------------------------------------ */
+.open{
+
+    width:100%;
+}
+.close{
+
+    width:0;
+}
+#navbar-phone{
+    position: fixed;
+    height:100%;
+    left:0;
+    z-index:10;
+    background-color: #234976;
+    font-size:1.6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    color:white;   
+    transition: width 0.7s ease-in-out;
+
+
+}
+#nav-close-btn{
+    margin: 100px !important;
+    font-size: 2rem;
+
+}
+#navbar-phone div{
+    margin:1rem 0;
+
+}
+
+#navbar-phone a{
+    text-decoration: none;
+    font-weight: 600;
+    color:white;
+}
+
+
+
+
+
+
+
+
+/* head-------------------------------------------------------------------------------------------*/
 
 #home {
     position: relative;
@@ -435,6 +486,7 @@ div{
     color: white;
     font-family: 'Work Sans', sans-serif;
     width:100%;
+
     /* overflow: hidden; */
 }
 
@@ -443,9 +495,10 @@ div{
     font-size: 60px;
     font-weight: 300;
     margin: 0;
+    padding-top:60px;
     margin-bottom:30px;
     color: #234976;
-
+    position: relative;
     font-weight: 600;
 }
 #bottles{
@@ -642,6 +695,7 @@ div{
     /* height:80vh;
     padding-top:20vh; */
     min-height:400px;
+
 }
 #support a{
     color:white;
@@ -662,6 +716,7 @@ div{
     padding:20px 0;
     display:flex;
     justify-content: space-between;
+    
 
 }
 #footer h2{
@@ -840,7 +895,7 @@ div{
     }
     #follow{
         width:auto;
-        margin-right:50px;
+        margin-right:10px;
         
     }
     #dropdown-menu{
