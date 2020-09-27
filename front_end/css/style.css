@@ -3,7 +3,7 @@ body {
     margin: 0;
     position: relative;
     width:100%;
-
+    min-width:374px;
     font-family: sans-serif;
 }
 
@@ -102,8 +102,14 @@ div{
     font-weight: 600;
     letter-spacing: 1.5px;
     text-align: end;
+    margin-right:20px;
 }
-
+#number img{
+    position:relative;
+    bottom:-3px;
+    height:23px;
+    width:26px;
+}
 
 /* bar------------------------------------- */
 .menu-width {
@@ -622,7 +628,7 @@ div{
 
 .button-container {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
 }
 
 .p-button {
@@ -713,7 +719,6 @@ div{
 
 #footer{
     position: relative;
-    padding:20px 0;
     display:flex;
     justify-content: space-between;
     
@@ -721,17 +726,17 @@ div{
 }
 #footer h2{
     font-weight:300;
-    font-size:14px;
-    margin-bottom:20px;
+    font-size:12px;
+    margin-bottom:10px;
 }
 #footer ul{
-    font-size:11px;
+    font-size:10px;
     padding:0;
     color:grey
     
 }
 #footer li{
-    margin-top:10px;
+    margin-top:6px;
 }
 /* free water test -----------------------------------*/
 
@@ -754,6 +759,37 @@ div{
 }
 #free-water a:hover{
     color:lightgrey;
+}
+
+/* whatsapp logo -----------------------------------*/
+
+#whatsapp{
+    position:fixed;
+    display:none;
+
+    bottom:0;
+    text-align:center;
+    width:100%;
+    color:white;
+    font-weight:600;
+    font-size:22px;
+    z-index:5;
+}
+#whatsapp-con{
+    background-color:#234976;
+    margin:auto;
+    display: inline-block;
+}
+
+#whatsapp img{
+    height:35px;
+    width:35px;
+}
+#no{
+    position: relative;
+    top:-8px;
+    display: inline;
+    padding:10px;  
 }
 
 
@@ -939,6 +975,9 @@ div{
         height:240px;
         min-height:240px;
     }
+    #whatsapp{
+        display: block;
+    }
 
 
     
@@ -998,19 +1037,31 @@ div{
         font-size:10px;
     }
     #footer ul{
-        font-size:7px;
+        font-size:6px;
     }
     #footer li{
-        margin-top:8px;
+        margin-top:5px;
     }
 
     #free-water{
-        right:-76px;
+        /* right:-76px; */
         top:200px;
-        padding:5px 17px;
+        /* padding:5px 17px;
         font-size:15px;
-        
+         */
     }
+    /* #whatsapp{
+        font-size:20px;
+    }
+    
+    #whatsapp img{
+        height:30px;
+        width:30px;
+    }
+    #no{
+        top:-6px;
+
+    } */
     .info{
         padding-left:20px;
         height:300px;
@@ -1063,7 +1114,7 @@ div{
 
 
 
-
+/* 
 @media screen and (max-width: 350px){
     .p-button {
         cursor: pointer;
@@ -1077,4 +1128,4 @@ div{
         margin-right: 10px;
         padding: 2px 10px;
     }
-}
+} */
